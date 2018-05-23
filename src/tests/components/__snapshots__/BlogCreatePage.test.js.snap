@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogCreatePage to render correctly 1`] = `
+<div>
+  <p>
+    Hello it me
+  </p>
+</div>
+`;

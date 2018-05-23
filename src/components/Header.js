@@ -4,16 +4,13 @@ import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
-  <header className="header">
-    <div className="content-container">
-      <div className="header__content">
-        <Link className="header__title" to="/dashboard">
-          <h1>Boilerplate</h1>
-        </Link>
-        <button className="button button--link" onClick={startLogout}>Logout</button>
-      </div>
+  <nav className="navbar navbar-dark bg-primary">
+    <div className="container">
+      <span className="navbar-brand mb-0 h1">Blog</span>
+
+      <button className="btn btn-outline-light my-2 my-sm-0" onClick={startLogout}>Logout</button>
     </div>
-  </header>
+  </nav>
 );
 
 const mapDispatchToProps = (dispatch) => ({
